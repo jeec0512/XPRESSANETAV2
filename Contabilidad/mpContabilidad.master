@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.master" AutoEventWireup="true" CodeFile="mpContabilidad.master.cs" Inherits="Contabilidad_mpContabilidad" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contenidoMenuContextual" Runat="Server">
+    <aside style="width:15vw">
+        <nav>
+            <ul class="vertical">
+                <li>
+                    <asp:HyperLink ID="lNovedades" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/NovedadesContables.aspx">Novedades</asp:HyperLink>
+                </li>
+                 <li>
+                    <asp:HyperLink ID="lAbrePeriodos" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/abrePeriodos.aspx">Abre períodos</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lEgresoproveedor" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/egresoProveedor.aspx">Registro Egresos</asp:HyperLink>
+                </li>
+                
+                <li>
+                    <asp:HyperLink ID="lNotasCreditoProv" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/nCreditoProveedor.aspx">Nota de Crédito Proveedor</asp:HyperLink>
+                </li>
+
+                 <li>
+                    <asp:HyperLink ID="HyperLink1" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/registroContablePedidoCheques.aspx">Registro contable de cheques</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lRegEgresos" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/registroContEgresos.aspx">Registro contable egresos</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lRegIngresos" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/registroContIngresos.aspx">Registro contable ingresos</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lRegCheques" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/registroCheques.aspx">Impresión de cheques</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lDifDiarios" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/DiferenciasLibroDiario.aspx">Diferencias en el libro diario</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lDetCuentas" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/detalleMovCuentas.aspx">Detalle de movimientos por cuentas</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lMayores" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/mayores.aspx">Mayores</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lMayorizar" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/mayorizarXPeriodo.aspx">Mayorizar por período</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lRegRepContables" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/registroRepContables.aspx">Registro y reportes contables</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lControlBancos" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/anularRetencion.aspx">Anular retenciones</asp:HyperLink>
+                </li>
+
+                 <li>
+                    <asp:HyperLink ID="HyperLink2" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/anulacionCheques.aspx">Control bancos</asp:HyperLink>
+                </li>
+
+                 <li>
+                    <asp:HyperLink ID="lAnularretencion" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/anulaCheques.aspx">Anular cheques</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="HyperLink3" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/actualizarSecuenciales.aspx">Secuenciales</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="HyperLink4" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/descontabilizar.aspx">Descontabilizar</asp:HyperLink>
+                </li>
+                
+                <li>
+                    <asp:HyperLink ID="lAutRetencion" CssClass="gradientSub" runat="server" NavigateUrl="~/Contabilidad/administracionCuentasGasto.aspx">Administración cuentas de gasto</asp:HyperLink>
+                </li>
+
+
+
+               
+               
+                
+                
+                
+
+               
+                
+                
+                
+               
+            </ul>
+
+        </nav>
+    </aside>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="contenidoPrincipal" Runat="Server">
+     <asp:ContentPlaceHolder ID="contenidoPrincipal" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

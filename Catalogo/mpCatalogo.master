@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.master" AutoEventWireup="true" CodeFile="mpCatalogo.master.cs"
+    Inherits="Catalogo_mpCatalogo" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="act1" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contenidoMenuContextual" runat="Server">
+    <style>
+			
+			.btn-menu {
+				display: none;
+			}
+
+        .img {
+            width:30px;
+            height:30px;
+            border:1px solid red;
+        }
+
+			.main-hamb-submenu .lblHamb {
+				
+				width: 30px;
+				height: 30px;
+				padding: 10px;
+				
+				background: rgba(0,0,0,0.0);
+				color: #fff;
+			}
+
+			.main-hamb-submenu .lblHamb:hover {
+				cursor: pointer;
+				background: rgba(0,0,0,0.0);
+				color:#000;
+			}
+
+			.main-nav  {
+				z-index:0;
+			}
+			
+			.main-nav .main-menu {
+				position: absolute;
+				z-index:99;
+				background: #4e94ab;
+				margin: 0;
+				list-style: none;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				width: 30%;
+				margin-left: -70%;
+				transition: all 0.5s;
+			}
+
+			.main-nav .main-menu li {
+				border-right: 1px solid #fff;
+			}
+
+			.main-nav .main-menu li:hover {
+				background: rgba(0,0,0,0.3);
+			}
+
+			.main-nav .main-menu li a {
+				display: block;
+				padding: 15px 15px;
+				color: #fff;
+				text-decoration: none;
+				font-size: medium;
+			}
+
+			.btn-menu:checked ~ .main-nav .main-menu {
+				margin: 0;
+			}
+
+       
+		</style>
+    <div class="main-hamb-submenu">
+       
+        <input type="checkbox" id="btn-menu" class="btn-menu" />
+        <label for="btn-menu" class="lblHamb"> <img src="../images/iconos/hamb.png" alt="Menú" class="img" /></label>
+        <nav class="main-nav">
+            <ul class="main-menu">
+				<li>
+                    <asp:HyperLink ID="lMPersona" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/mantenimientoPersonas.aspx">Mantenimiento de clientes</asp:HyperLink>
+                </li>
+
+
+                <li>
+                    <asp:HyperLink ID="lMatriz" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/matriz.aspx">Proveedores </asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lSucursal" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/sucursal.aspx">Establecimientos</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lProducto" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/producto.aspx">Productos</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lColaborador" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/colaborador.aspx">Colaborador</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lColaborador2" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/colaboradores2.aspx">Colaboradores</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lColaborador3" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/colaborador3.aspx">Colaboradores</asp:HyperLink>
+                </li>
+                <!--
+                <li>
+                    <asp:HyperLink ID="lVendedor" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/vendedor.aspx">Vendedor</asp:HyperLink>
+                </li>
+                -->
+                <li>
+                    <asp:HyperLink ID="lCuentas" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/planCuenta2.aspx">Plan de cuentas</asp:HyperLink>
+                </li>
+
+                <li>
+                    <asp:HyperLink ID="lGrupodContables" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/gruposContables.aspx">Grupos Contables</asp:HyperLink>
+                </li>
+
+                
+
+               
+                <!-- PERFIL DE USUARIO-->
+                 <li>
+                    <asp:HyperLink ID="lRolesUsu" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/roles.aspx">Roles del usuario</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lUsuario" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/usuario.aspx">Usuarios</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lActivarUsu" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/activarUsuario.aspx">Activar usuario</asp:HyperLink>
+                </li>
+                 <li>
+                    <asp:HyperLink ID="lMenuDin" CssClass="gradientSub" runat="server" NavigateUrl="~/Catalogo/menuDinamico.aspx">Menú dinámico</asp:HyperLink>
+                </li>
+				
+            </ul>
+
+        </nav>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="contenidoPrincipal" runat="Server">
+    <asp:ContentPlaceHolder ID="contenidoPrincipal" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

@@ -1,0 +1,525 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow-x:hidden;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33333333333333%;
+}
+
+.col-2 {
+    width: 16.66666666666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333333333333%;
+}
+
+.col-5 {
+    width: 41.66666666666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33333333333333%;
+}
+
+.col-8 {
+    width: 66.66666666666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33333333333333%;
+}
+
+.col-11 {
+    width: 91.66666666666667%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media screen and (min-width:30em) {
+    .col-sm-1 {
+        width: 8.33333333333333%;
+    }
+
+    .col-sm-2 {
+        width: 16.66666666666667%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.33333333333333%;
+    }
+
+    .col-sm-5 {
+        width: 41.66666666666667%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.33333333333333%;
+    }
+
+    .col-sm-8 {
+        width: 66.66666666666667%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.33333333333333%;
+    }
+
+    .col-sm-11 {
+        width: 91.66666666666667%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:40em) {
+    .col-md-1 {
+        width: 8.33333333333333%;
+    }
+
+    .col-md-2 {
+        width: 16.66666666666667%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33333333333333%;
+    }
+
+    .col-md-5 {
+        width: 41.66666666666667%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33333333333333%;
+    }
+
+    .col-md-8 {
+        width: 66.66666666666667%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33333333333333%;
+    }
+
+    .col-md-11 {
+        width: 91.66666666666667%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:62em) {
+    .col-lg-1 {
+        width: 8.33333333333333%;
+    }
+
+    .col-lg-2 {
+        width: 16.66666666666667%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33333333333333%;
+    }
+
+    .col-lg-5 {
+        width: 41.66666666666667%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33333333333333%;
+    }
+
+    .col-lg-8 {
+        width: 66.66666666666667%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33333333333333%;
+    }
+
+    .col-lg-11 {
+        width: 91.66666666666667%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:75em) {
+    .col-xl-1 {
+        width: 8.33333333333333%;
+    }
+
+    .col-xl-2 {
+        width: 16.66666666666667%;
+    }
+
+    .col-xl-3 {
+        width: 25%;
+    }
+
+    .col-xl-4 {
+        width: 33.33333333333333%;
+    }
+
+    .col-xl-5 {
+        width: 41.66666666666667%;
+    }
+
+    .col-xl-6 {
+        width: 50%;
+    }
+
+    .col-xl-7 {
+        width: 58.33333333333333%;
+    }
+
+    .col-xl-8 {
+        width: 66.66666666666667%;
+    }
+
+    .col-xl-9 {
+        width: 75%;
+    }
+
+    .col-xl-10 {
+        width: 83.33333333333333%;
+    }
+
+    .col-xl-11 {
+        width: 91.66666666666667%;
+    }
+
+    .col-xl-12 {
+        width: 100%;
+    }
+}
+
+.header {
+    /* position: sticky;*/
+    top: 0;
+    left: 0;
+    background: var(--blancoAneta);
+    border: solid thin var(--azulAnetaCortina);
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    background-image: url("images/banner/bannerExpressAneta_opaco.png");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-origin: content-box;
+    background-position: bottom;
+    opacity: 1;
+    border-radius: 0.5rem;
+}
+
+.header-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.header-title {
+    margin-left: 1rem;
+}
+
+.img-header {
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+    width: 60%;
+    height: auto;
+    background-color: #254254;
+}
+
+.datos-usuarios {
+    margin-right: 2rem;
+}
+
+.block-usuario {
+    display: block;
+    padding-bottom: 0.8rem;
+    color: var(--azulAnetaOscuro);
+}
+
+.main-hamb {
+    width: 100%;
+    background: #002e69;
+    position: sticky;
+    top: 7.7rem;
+    left: 0;
+}
+
+iframe, img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+.aspect-ratio-16-9 {
+    background-color: #fff;
+    aspect-ratio: 16/9;
+}
+
+.iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+
+.tabs-menu {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 95%;
+    height: 6rem;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azulAnetaLogoOpacity);            
+   
+}
+
+.tabs-menu input[type="radio"] {
+        display: none;
+    }
+
+.main-menu {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.tabs-menu label{
+    position: relative;
+    width: calc(100%/11 - 0.5rem);
+    text-align: center;
+    cursor: pointer;
+    z-index: var(--z-modal);
+    color: var( --blancoAneta);
+    font-weight: 600;
+    font-size: 0.8rem;
+    /*display: block;
+    border: 1PX solid var(--blancoAneta);*/
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
+
+
+.tabs-menu label {
+    position: relative;
+    width: calc(100%/11 - 0.5rem);
+    text-align: center;
+    cursor: pointer;
+    z-index: var(--z-modal);
+    color: var( --blancoAneta);
+    font-weight: 600;
+    font-size: 0.8rem;
+    /*display: block;
+    border: 1PX solid var(--blancoAneta);*/
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
+
+.tabs-menu label:hover {
+    color: #fff;
+}
+
+.tabs-menu input[type="radio"]:checked+label+.main-menu{
+    color: #fff;
+}
+
+.tab-bg-hover {
+    position: absolute;
+    width: calc(100% / 11 - 0.5rem);
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(90deg, #a00, #d00);
+    transition:transform 300ms ease-in-out;
+}
+
+
+
+#tab_1:checked ~ .tab-bg-hover {
+    transform: translate(0%);
+    color:blue;
+}
+
+#tab_2:checked ~ .tab-bg-hover {
+    transform: translate(100%);
+    color:blue;
+}
+
+ #tab_3:checked ~ .tab-bg-hover {
+    transform: translate(200%);
+    color:blue;
+}
+
+#tab_4:checked ~ .tab-bg-hover {
+    transform: translate(320%);
+    color:blue;
+}
+
+#tab_5:checked ~ .tab-bg-hover {
+    transform: translate(430%);
+    color:blue;
+}
+
+#tab_6:checked ~ .tab-bg-hover {
+    transform: translate(540%);
+    color:blue;
+}
+
+ #tab_7:checked ~ .tab-bg-hover {
+    transform: translate(620%);
+    color:blue;
+}
+
+#tab_8:checked ~ .tab-bg-hover {
+    transform: translate(730%);
+    color:blue;
+}
+
+#tab_9:checked ~ .tab-bg-hover {
+    transform: translate(840%);
+    color:blue;
+}
+
+#tab_10:checked ~ .tab-bg-hover {
+    transform: translate(940%);
+    color:blue;
+}
+
+ #tab_11:checked ~ .tab-bg-hover {
+    transform: translate(1050%);
+    color:blue;
+}
+
+#tab_12:checked ~ .tab-bg-hover {
+    transform: translate(0%);
+    color:blue;
+}
+
+#tab_13:checked ~ .tab-bg-hover {
+    transform: translate(100%);
+    color:blue;
+}
+
+ #tab_14:checked ~ .tab-bg-hover {
+    transform: translate(200%);
+    color:blue;
+}
+
+#tab_15:checked ~ .tab-bg-hover {
+    transform: translate(320%);
+    color:blue;
+}
+
+#tab_16:checked ~ .tab-bg-hover {
+    transform: translate(430%);
+    color:blue;
+}
+
+#tab_17:checked ~ .tab-bg-hover {
+    transform: translate(540%);
+    color:blue;
+}
+
+ #tab_18:checked ~ .tab-bg-hover {
+    transform: translate(620%);
+    color:blue;
+}
+
+#tab_19:checked ~ .tab-bg-hover {
+    transform: translate(730%);
+    color:blue;
+}
+
+#tab_20:checked ~ .tab-bg-hover {
+    transform: translate(840%);
+    color:blue;
+}
+
+#tab_21:checked ~ .tab-bg-hover {
+    transform: translate(940%);
+    color:blue;
+}
+
+ #tab_22:checked ~ .tab-bg-hover {
+    transform: translate(1050%);
+    color:blue;
+}
+
+
+ 

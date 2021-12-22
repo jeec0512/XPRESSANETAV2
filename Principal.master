@@ -1,0 +1,157 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principal.master.cs" Inherits="Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SAS</title>
+    <link rel="shortcut icon" href="images/iconos/icoExpress2.png" />
+    <link href="App_Themes/Estilos/inicio.css" rel="stylesheet" />
+    <link href="App_Themes/Estilos/principal.css" rel="stylesheet" />
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics 
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-136666470-1"></script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136666470-1');
+        function mpSeleccionOnOk() {
+
+            var mpddlProvincia = document.getElementById("mpddlProvincia");
+            if (typeof mpddlProvincia == 'undefined' || typeof mpddlProvincia == null) {
+                alert('indefinido');
+            }
+            else {
+                txtDireccionmpjeec.value = mpddlProvincia.options[mpddlProvincia.selectedIndex].value;
+
+            }
+        }
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="main_wrapper">
+
+            <header class="header">
+                <div class="header-one">
+                    <section id="titulo" class="header-title">
+                        <h1>ANETAEXPRESS SAS</h1>
+                    </section>
+                    <div class="datos-usuarios">
+                        <section id="subtitulo">
+                            <h2></h2>
+                        </section>
+                        <asp:Label runat="server" ID="lblusuario" CssClass="block-usuario"></asp:Label>
+                        <span id="spUsuario" runat="server" class="block-usuario"></span>
+                    </div>
+                </div>
+                <nav class="tabs-menu row">
+                        <input type="radio" id="tab_1" name="tabs" />
+                        <label for="tab_1">Ingresos</label>
+                        
+                        <input type="radio" id="tab_2" name="tabs" />
+                        <label for="tab_2">Ingresos</label>
+                        
+                        <input type="radio" id="tab_3" name="tabs" />
+                        <label for="tab_3">Ingresos</label>
+                        
+                        <input type="radio" id="tab_4" name="tabs" />
+                        <label for="tab_4">Egresos</label>
+
+                        <input type="radio" id="tab_5" name="tabs" />
+                        <label for="tab_5">Egresos</label>
+                    
+                        <input type="radio" id="tab_6" name="tabs" />
+                        <label for="tab_6">Contabi</label>
+                    
+                        <input type="radio" id="tab_7" name="tabs" />
+                        <label for="tab_7">Tesor</label>
+                    
+                        <input type="radio" id="tab_8" name="tabs" />
+                        <label for="tab_8">Tribut</label>
+                    
+                        <input type="radio" id="tab_9" name="tabs" />
+                        <label for="tab_9">Informes</label>
+
+                        <input type="radio" id="tab_10" name="tabs" />
+                        <label for="tab_10">Cartera</label>
+                    
+                        <input type="radio" id="tab_11" name="tabs" />
+                        <label for="tab_11">Herram</label>
+                    <div class="tab-bg-hover"></div>
+                    
+                </nav>
+
+                <nav class="tabs-menu row">
+                        <input type="radio" id="tab_12" name="tabs" />
+                        <label for="tab_12">Salir</label>
+
+                        <input type="radio" id="tab_13" name="tabs" />
+                        <label for="tab_13">seccion 13</label>
+
+                        <input type="radio" id="tab_14" name="tabs" />
+                        <label for="tab_14">seccion 14</label>
+
+                        <input type="radio" id="tab_15" name="tabs" />
+                        <label for="tab_15">seccion 15</label>
+
+                        <input type="radio" id="tab_16" name="tabs" />
+                        <label for="tab_16">seccion 16</label>
+
+                        <input type="radio" id="tab_17" name="tabs" />
+                        <label for="tab_17">seccion 17</label>
+
+                        <input type="radio" id="tab_18" name="tabs" />
+                        <label for="tab_18">seccion 18</label>
+
+                        <input type="radio" id="tab_19" name="tabs" />
+                        <label for="tab_19">seccion 19</label>
+
+                        <input type="radio" id="tab_20" name="tabs" />
+                        <label for="tab_20">seccion 20</label>
+
+                        <input type="radio" id="tab_21" name="tabs" />
+                        <label for="tab_21">seccion 21</label>
+
+                        <input type="radio" id="tab_22" name="tabs" />
+                        <label for="tab_22">seccion 22</label>
+                    
+                    <div class="tab-bg-hover"></div>
+                    
+                </nav>
+
+
+
+
+            </header>
+
+            <div id="main_container" style="background-image: url('~//images//fondos//uno.png')">
+                <div id="columnIzq">
+
+                    <asp:ContentPlaceHolder ID="contenidoMenuContextual" runat="server">
+                        <div style="background-image: url('~//images//fondos//uno.png'); width: 100vw; height: 50vh"></div>
+                    </asp:ContentPlaceHolder>
+
+                </div>
+
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="contenidoPrincipal" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </form>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

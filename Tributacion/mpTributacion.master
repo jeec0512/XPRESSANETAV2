@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.master" AutoEventWireup="true" CodeFile="mpTributacion.master.cs"
+    Inherits="Tributacion_mpTributacion" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="act1" %>
+
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contenidoMenuContextual" runat="Server">
+    <aside>
+        <nav>
+            <ul class="vertical">
+				<li>
+				<asp:HyperLink ID="HyperLink3" CssClass="gradientSub" runat="server" NavigateUrl="~/Tributacion/generaraATS.aspx">Generar ATS</asp:HyperLink>
+			</li>
+                <li>
+                    <asp:HyperLink ID="lFacEmitNac" CssClass="gradientSub" runat="server" NavigateUrl="~/Tributacion/facturasEmitidasNacional.aspx">Facturas emitidas nacional</asp:HyperLink>
+                </li>
+            </ul>
+
+        </nav>
+    </aside>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="contenidoPrincipal" runat="Server">
+    <asp:ContentPlaceHolder ID="contenidoPrincipal" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
